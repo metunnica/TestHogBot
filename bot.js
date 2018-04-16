@@ -38,8 +38,11 @@ var Twitter = new twit (config);
     
        }, 5000);
 
-// reply tweet
-Twitter.post('statuses/update', {status: 'I love Hogib'}, function(error, tweet, responce){
+// send tweet
+
+var TwitterPackage =require('twitter');
+
+Twitter.post('statuses/update', {status: 'I really love Hogib'}, function(error, tweet, responce){
     if(error){
         console.log(error);
     }
