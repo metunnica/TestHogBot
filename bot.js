@@ -1,5 +1,5 @@
 var TwitterPackage = require('twitter');
-var secret = require('./config.js');
+var secret = require('./secret');
 var Twitter = new TwitterPackage(secret);
 var movieQuotes = [
     "Frankly, my dear, I don't give a damn. GONE WITH THE WIND. 1939",
