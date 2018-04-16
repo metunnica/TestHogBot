@@ -8,7 +8,7 @@ var Twitter = new twit (config);
 //Retweet #Hogibs
     var retweet = function(){
         var params = {
-            q: '#Hogibtest, #hogibtest',
+            q: '#uffq',
             result_type: 'recent'
         }
         Twitter.get('search/tweets', params, function(err, data) {
