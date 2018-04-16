@@ -1,6 +1,9 @@
 var TwitterPackage = require('twitter');
-var secret = require('./secret');
+
+var secret = require("./secret");
+
 var Twitter = new TwitterPackage(secret);
+
 var movieQuotes = [
     "Frankly, my dear, I don't give a damn. GONE WITH THE WIND. 1939",
     "I'm gonna make him an offer he can't refuse. THE GODFATHER. 1972",
@@ -111,14 +114,14 @@ Twitter.stream('statuses/filter', {track: '#HogibMayMovies'}, function(stream) {
 
         var randomIndex = Math.round(Math.random() * movieQuotes.length);
         
-        var reply = "Hi @" + tweet.user.screen.name + ", thanks for playing, here is a random movie quote!: " + movieQuotes[randomIndex];
+        var reply = "Hi @" + tweet.user.screen_name + ", " + movieQuotes[randomIndex];
         
-            Twitter.post('statuses/update', {status: reply}, function(error, tweetReply, responce) {
+            Twitter.post('statuses/update', {status: reply}, function(error, tweetReply, responce){
 
                 if(error){
                     console.log(error);
                 }
-                console.log(tweetReply.text)
+                console.log(tweetReply.text);
             });
     });
 
