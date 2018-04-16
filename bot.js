@@ -1,24 +1,6 @@
-// bot.js
-//var 
-  //  twit = require('twit');
-    //config = require('./config');
-
-//var Twitter = new twit (config);
-
-// send tweet
-var TwitterPackage = import('twitter');
-var secret = import('./config');
+var TwitterPackage = require('twitter');
+var secret = require('./config.js');
 var Twitter = new TwitterPackage(secret);
-//Twitter.post('statuses/update', {status: 'I really love Hogib'}, function(error, tweet, responce){
-  //  if(error){
-    //    console.log(error);
-    //}
-    //console.log(tweet);
-    //console.log(response);
-//});
-  
-// Rep;y to #'s
-
 var movieQuotes = [
     "Frankly, my dear, I don't give a damn. GONE WITH THE WIND. 1939",
     "I'm gonna make him an offer he can't refuse. THE GODFATHER. 1972",
