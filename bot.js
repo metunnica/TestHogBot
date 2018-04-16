@@ -6,8 +6,8 @@
 //var Twitter = new twit (config);
 
 // send tweet
-var TwitterPackage = require('twitter');
-var secret = require('./config');
+var TwitterPackage = import('twitter');
+var secret = import('./config');
 var Twitter = new TwitterPackage(secret);
 //Twitter.post('statuses/update', {status: 'I really love Hogib'}, function(error, tweet, responce){
   //  if(error){
