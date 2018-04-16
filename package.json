@@ -1,0 +1,19 @@
+{
+  "name": "testhogbot",
+  "version": "1.0.0",
+  "description": "TestHogBot",
+  "main": "app.js",
+  "scripts": {
+    "test": "{"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metunnica/TestHogBot.git"
+  },
+  "author": "Metunnica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metunnica/TestHogBot/issues"
+  },
+  "homepage": "https://github.com/metunnica/TestHogBot#readme"
+}
