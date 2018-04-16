@@ -1,14 +1,14 @@
 // bot.js
-var 
-    twit = require('twit');
-    config = require('./config');
+//var 
+  //  twit = require('twit');
+    //config = require('./config');
 
-var Twitter = new twit (config);
+//var Twitter = new twit (config);
 
 // send tweet
-
-var TwitterPackage =require('twitter');
-
+var TwitterPackage = require('twitter');
+var secret = require('./config');
+var Twitter = new TwitterPackage(secret);
 //Twitter.post('statuses/update', {status: 'I really love Hogib'}, function(error, tweet, responce){
   //  if(error){
     //    console.log(error);
