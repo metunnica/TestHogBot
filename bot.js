@@ -114,7 +114,7 @@ Twitter.stream('statuses/filter', {track: '#HogibMayMovies'}, function(stream) {
 
         var randomIndex = Math.round(Math.random() * movieQuotes.length);
         
-        var reply = "Hi @" + tweet.user.screen_name + ", " + movieQuotes[randomIndex];
+        var reply = "Hi @" + tweet.user.screen_name + ", thanks for playing, here is a random movie quote:  " + movieQuotes[randomIndex];
         
             Twitter.post('statuses/update', {status: reply}, function(error, tweetReply, responce){
 
