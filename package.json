@@ -1,19 +1,28 @@
 {
-  "name": "testhogbot",
+  "name": "nudehogbot",
   "version": "1.0.0",
-  "description": "TestHogBot",
-  "main": "app.js",
+  "description": "Nodejs Hog Bot",
+  "main": "bot.js",
   "scripts": {
-    "test": "{"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/metunnica/TestHogBot.git"
   },
+  "keywords": [
+    "Hog",
+    "Bot",
+    "Nude"
+  ],
   "author": "Metunnica",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/metunnica/TestHogBot/issues"
   },
-  "homepage": "https://github.com/metunnica/TestHogBot#readme"
+  "homepage": "https://github.com/metunnica/TestHogBot#readme",
+  "dependencies": {
+    "node-twitterbot": "^0.2.2",
+    "twit": "^2.2.9"
+  }
 }
