@@ -8,7 +8,7 @@ var Twitter = new twit (config);
 //Retweet #Hogibs
     var retweet = function(){
         var params = {
-            q: '#Hogib, #hogib',
+            q: '#Hogibtest, #hogibtest',
             result_type: 'recent'
         }
         Twitter.get('search/tweets', params, function(err, data) {
@@ -21,7 +21,7 @@ var Twitter = new twit (config);
                         console.log('Retweeted!!!');
                     }
                     if (err) {
-                        console.log('Somthing went wrong while retweeting. Dupe...');
+                        console.log('Somthing went wrong while retweeting. Dope...');
                     }
                 });
             }
