@@ -37,4 +37,13 @@ var Twitter = new twit (config);
         console.log('loop restarted')
     
        }, 5000);
+
+// reply tweet
+Twitter.post('statuses/update', {status: 'I love Hogib'}, function(error, tweet, responce){
+    if(error){
+        console.log(error);
+    }
+    console.log(tweet);
+    console.log(response);
+});
   
