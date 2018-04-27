@@ -129,3 +129,13 @@ Twitter.stream('statuses/filter', {track: '#HogibMayMovies'}, function(stream) {
         console.log(error);
     });
 });
+
+const axios = require('axios');
+
+axios.get('https://swapi.co/api/people')
+    .then(responce => {
+        console.log(responce.data.results);
+    })
+    .catch(error => {
+        console.log(error);
+    });
