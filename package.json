@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/metunnica/TestHogBot#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "node-twitterbot": "^0.2.2",
     "twit": "^2.2.9",
     "twitter": "^1.7.1"
